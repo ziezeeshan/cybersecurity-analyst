@@ -1,0 +1,6 @@
+// Detects PowerShell scripts using network commands like Invoke-WebRequest or curl
+process.name: "powershell.exe" AND (
+  process.command_line: "*Invoke-WebRequest*" OR
+  process.command_line: "*iwr*" OR
+  process.command_line: "*curl*"
+)
