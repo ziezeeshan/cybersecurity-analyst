@@ -1,0 +1,25 @@
+title: Mimikatz Credential Dumping via LSASS Access
+id: 81294f56-881a-4b42-b97c-mimikatz-lsass
+description: Detects credential dumping behavior targeting lsass.exe, commonly seen with Mimikatz
+status: stable
+author: Muhammad Zeeshan
+date: 2025/07/09
+logsource:
+  product: windows
+  service: sysmon
+  definition: 'EventID 10 - Process access'
+detection:
+  selection:
+    EventID: 10
+    TargetImage: 'C:\\Windows\\System32\\lsass.exe'
+    GrantedAccess: '0x1010'
+  condition: selection
+level: critical
+tags:
+  - attack.credential_access
+  - attack.t1003
+  - mimikatz
+  - lsass
+references:
+  - https://attack.mitre.org/techniques/T1003/
+  - https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
