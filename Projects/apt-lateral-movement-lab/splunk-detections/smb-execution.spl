@@ -1,0 +1,4 @@
+# Detects remote service creation and PsExec activity via SMB
+index=winlogs EventCode=7045 
+(Image="*\\PSEXESVC.exe" OR ServiceName="PSEXESVC" OR Description="PsExec Remote Service")
+| stats count by _time, host, user, Image, ServiceName, CommandLine
