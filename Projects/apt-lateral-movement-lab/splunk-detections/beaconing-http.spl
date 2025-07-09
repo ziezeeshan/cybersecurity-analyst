@@ -1,0 +1,5 @@
+# Detects potential C2 beaconing via repetitive HTTP calls like /connect or /checkin
+index=proxy_logs OR index=network_traffic
+| regex uri_path=".*\\/(checkin|connect|ping|update).*"
+| stats count by _time, src_ip, uri_path, user_agent, http_method
+| where count > 5
