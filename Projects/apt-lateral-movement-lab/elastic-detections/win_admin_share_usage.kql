@@ -1,0 +1,4 @@
+// Detects access to Windows administrative shares (e.g., \\<host>\ADMIN$)
+event.code: 5145 AND 
+share.name: "\\\\*\\ADMIN$" AND 
+user.name: ("administrator" OR "admin" OR "*\\admin" OR "Zeeshan")
