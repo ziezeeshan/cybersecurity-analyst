@@ -1,0 +1,76 @@
+{
+  "name": "APT Lateral Movement Detections",
+  "versions": {
+    "attack": "13",
+    "navigator": "4.7"
+  },
+  "domain": "enterprise-attack",
+  "description": "Mapped detections from APT Lateral Movement Lab project.",
+  "techniques": [
+    {
+      "techniqueID": "T1021.002",
+      "tactic": "lateral-movement",
+      "color": "#ff6666",
+      "score": 9,
+      "comment": "PsExec detection via Sysmon EventID 1"
+    },
+    {
+      "techniqueID": "T1003",
+      "tactic": "credential-access",
+      "color": "#ff0000",
+      "score": 10,
+      "comment": "Mimikatz LSASS access detection"
+    },
+    {
+      "techniqueID": "T1059.001",
+      "tactic": "execution",
+      "color": "#ffcc00",
+      "score": 8,
+      "comment": "PowerShell HTTP command line detection"
+    },
+    {
+      "techniqueID": "T1071.001",
+      "tactic": "command-and-control",
+      "color": "#66ccff",
+      "score": 7,
+      "comment": "Beaconing over HTTP(S)"
+    }
+  ],
+  "gradient": {
+    "colors": ["#ffffff", "#ff6666"],
+    "minValue": 0,
+    "maxValue": 10
+  },
+  "legendItems": [
+    {
+      "label": "High Fidelity Detection",
+      "color": "#ff6666"
+    },
+    {
+      "label": "Medium Fidelity",
+      "color": "#ffcc00"
+    },
+    {
+      "label": "C2 Visibility",
+      "color": "#66ccff"
+    }
+  ],
+  "metadata": [
+    {
+      "name": "Author",
+      "value": "Muhammad Zeeshan"
+    },
+    {
+      "name": "Date",
+      "value": "2025-07-09"
+    },
+    {
+      "name": "Project",
+      "value": "APT Lateral Movement Lab"
+    }
+  ],
+  "layout": "side",
+  "showTacticRowBackground": true,
+  "tacticRowBackground": "#ddd",
+  "selectTechniquesAcrossTactics": true
+}
