@@ -8,7 +8,7 @@ This repository showcases my work as a SOC Analyst and Blue Team specialist. Foc
 - IOC/IOA correlation using Elastic SIEM & Splunk ES
 
 ## 🧰 Tools & Platforms
-- `Splunk ES`, `IBM QRadar`, `Elastic Security`, `CrowdStrike Falcon`, `Darktrace`, `Wazuh`, `Zeek`
+- `Microsoft Sentinel`, `Splunk ES`, `IBM QRadar`, `Elastic Security`, `CrowdStrike Falcon`, `Darktrace`, `Wazuh`, `Zeek`
 
 ## 🛠 Sample Projects
 - Sigma-based detection rules for lateral movement
