@@ -1,0 +1,15 @@
+name: Lateral Movement Emulation Operation
+description: Multi-phase APT simulation covering credential dumping and remote execution
+groups:
+  - name: Emulated_APT_Lateral_Movement
+    adversary:
+      name: Lateral_Movement_APT
+      atomic_ordering:
+        - 09dcf08b-0a54-4c13-b9a4-f0c29c3f41bc  # T1059.001 - PowerShell Execution
+        - 04f3d153-fdec-4663-842c-8c655a659ccd  # T1021.002 - PsExec Admin Share
+        - 11b0208f-443c-4310-80fc-07d5c69291f6  # T1003 - Credential Dumping LSASS
+        - dbe1c53e-33ed-4c41-bcb6-818fbc1a1455  # T1086 - Registry Run Key
+        - 1e9aa93e-1a76-4f5f-9b8e-96f5eec0b079  # T1071.001 - HTTP Beaconing
+facts: []
+use_learning_parsers: true
+source: manual
