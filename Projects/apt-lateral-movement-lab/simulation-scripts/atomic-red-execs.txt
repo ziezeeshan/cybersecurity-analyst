@@ -1,0 +1,26 @@
+# Atomic Red Team Simulation Commands for Lateral Movement Lab
+
+# -- Credential Dumping (T1003)
+Invoke-AtomicTest T1003 -TestNumbers 1
+
+# -- PsExec Admin Share Execution (T1021.002)
+Invoke-AtomicTest T1021.002
+
+# -- PowerShell Execution (T1059.001)
+Invoke-AtomicTest T1059.001 -InputArgs @{"command_to_execute"="whoami"}
+
+# -- Registry Persistence (T1547.001)
+Invoke-AtomicTest T1547.001 -TestNumbers 1
+
+# -- HTTP C2 Beacon Emulation (T1071.001)
+Invoke-AtomicTest T1071.001
+
+# Optional: Run all in order as a script
+Start-Sleep -Seconds 2
+Invoke-AtomicTest T1059.001
+Start-Sleep -Seconds 2
+Invoke-AtomicTest T1021.002
+Start-Sleep -Seconds 2
+Invoke-AtomicTest T1003
+Start-Sleep -Seconds 2
+Invoke-AtomicTest T1071.001
