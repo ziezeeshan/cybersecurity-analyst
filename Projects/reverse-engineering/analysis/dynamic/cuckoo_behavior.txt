@@ -1,0 +1,4 @@
+[CUCKOO SANDBOX RESULTS]
+- Contacted domain: evil.0x0world.com
+- Registry modified: HKCU\\Software\\Microsoft\\Windows\\Run\\Payload
+- Dropped file: C:\\Users\\User\\AppData\\Local\\Temp\\dropper.exe
