@@ -1,0 +1,10 @@
+{
+  "name": "APT29 - MITRE TTPs",
+  "domain": "enterprise-attack",
+  "techniques": [
+    {"techniqueID": "T1059", "tactic": "execution", "score": 9, "comment": "Command-line execution"},
+    {"techniqueID": "T1027", "tactic": "defense-evasion", "score": 8, "comment": "Obfuscated files"}
+  ],
+  "version": "4.6",
+  "description": "Mapping of APT29 techniques based on public reporting"
+}
