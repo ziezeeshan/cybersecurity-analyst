@@ -1,0 +1,4 @@
+[GHIDRA STATIC ANALYSIS]
+- Found suspicious function at 0x401000
+- Decryption logic at 0x402000
+- C2 domain hardcoded: evil.0x0world.com
