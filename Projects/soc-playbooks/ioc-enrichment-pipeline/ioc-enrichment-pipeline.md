@@ -1,5 +1,6 @@
 # 🎯 Custom IOC Enrichment Pipeline with Microsoft Sentinel
 
+>This project establishes a custom IOC enrichment pipeline within Microsoft Sentinel, automating the enhancement of Indicators of Compromise (IOCs) using external threat intelligence sources like VirusTotal and AbuseIPDB. The pipeline ingests IOCs from Sentinel alerts, enriches them through API queries, and updates the original alerts with severity levels and threat actor tags when available. Triggered by Sentinel alerts, the Logic App parses the IOCs, analyzes the enrichment results, and can optionally notify analysts via Teams or Slack. This solution enhances threat detection and response capabilities while ensuring that Microsoft Sentinel and Logic Apps are in the same region or properly linked.
 
 ## 🛠 Tools & Services Used
 - **Microsoft Sentinel**
