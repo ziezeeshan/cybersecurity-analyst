@@ -44,8 +44,10 @@
 3. **Elastic Dashboards**:
    - Ingest logs or IOCs into Elasticsearch
    - Visualize with Kibana → Save screenshots to [`visuals/`](./visuals)
+   - ![Kibana TTP Graph](./visuals/kibana_graph.png)
+   - ![Elastic](./visuals/elastic.png)
 
 4. **Relationship Mapping**:
    - Use Maltego to map infrastructure and threat actor overlap
-
+   - ![Maltego Actor Graph](./visuals/maltego_actor_profile.png)
 
